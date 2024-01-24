@@ -1,0 +1,37 @@
+<div class="details">
+  <div class="co_detail">
+    <h4>
+      {{job['title']}}
+    </h4>
+    <div class="ls">
+      <div><b>location:</b>{{job['location']}}</div>
+      {% if 'salary' in job %}
+      <div> <b>salary:</b>{{job['salary']}}</div>
+      {% endif %}
+    </div>
+  </div>
+  <div class=b1>
+    <button class="btn btn-outline-success">Apply</button>
+  </div>
+  <!-- <span class="border-bottom"></span> -->
+</div>
+<style>
+  .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin-bottom:5px;  
+   
+  }
+
+  .ls {
+    display: flex: flex-direction:column:
+  }
+  .b1
+  {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+</style>

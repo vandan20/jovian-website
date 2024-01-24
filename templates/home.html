@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      .intro
+      {
+        font-family: system-ui
+      }
+      #contact_us
+      {
+       display:flex;
+       align-items:center;
+        justify-content:center;
+        width:100%;
+      }
+      #banner
+      {
+        width:100%;
+        height:360px;
+        object-fit:cover;
+      }
+    </style>
+    <title>jovin careers</title>
+  </head>
+    <body>
+      <div class="container">
+     <h1 class="text-center">jovin careers</h1>
+    <img class="rounded mx-auto d-block"src="https://aff4a72a-554b-40bc-b31a-4ac0ef4e3b1c-00-31s7wpams86o1.pike.replit.dev/static/banner.jpg"height="320" id="banner">
+      <h2 class="text-center">About jovian</h2>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+      <h2 class="text-center">open possition</h2>
+      <p class="text-center">>
+      {% for job in jb %}
+        {% include 'include.html' %}
+       {% endfor %}
+      </p>
+        <div id="contact_us">
+        <button type="button" class="btn btn-primary" >contect us</button>
+        </div>
+      </div>
+    </body>
+</html>
